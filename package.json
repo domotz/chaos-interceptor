@@ -1,12 +1,12 @@
 {
-  "name": "axios-chaos-interceptor",
-  "version": "1.0.2",
+  "name": "@domotz/chaos-interceptor",
+  "version": "2.0.0",
   "main": "dist/index.js",
   "types": "lib/types/index.d.ts",
   "license": "MIT",
-  "description": "Inject chaos to axios. Randomize response.",
-  "author": "Daisuke Awaji <gee.awa@gmail.com> (https://github.com/daisuke-awaji)",
-  "homepage": "https://github.com/daisuke-awaji/axios-chaos-interceptor",
+  "description": "Inject chaos into your network layer. Randomize response.",
+  "author": "Alessandro Pagiaro <a.pagiaro@domotz.com",
+  "homepage": "https://github.com/domotz/chaos-interceptor",
   "scripts": {
     "prepare": "tsc",
     "build": "rm -rf ./dist && rm -rf ./lib && tsc",

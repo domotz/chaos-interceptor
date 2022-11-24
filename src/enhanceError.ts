@@ -50,3 +50,17 @@ export const createError = <T>(param: CreateErrorParams<T>): AxiosError => {
   var error = new Error(message);
   return enhanceError<T>(error, config, code, request, response);
 };
+
+type CreateErrorResponseParams = {
+  status: number,
+  response: Response,
+  statusText: string,
+};
+
+
+export const createErrorResponse = (params: CreateErrorResponseParams) => {
+  return new Response(null, {
+    status: params.status,
+    statusText: params.statusText,
+  })
+};
